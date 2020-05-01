@@ -1,5 +1,7 @@
-# Utilities
+# Utils package
+
 Utilities to save time and code
+
 
 kjson.py - json save and load simplified
 
