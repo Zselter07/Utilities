@@ -1,4 +1,5 @@
-# Utils package
+# kov-utils ![Python 3.6](https://img.shields.io/static/v1?label=Python&message=3.6%20|%203.7&color=blue)
+
 
 Utilities to save time and code
 
