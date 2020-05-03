@@ -3,6 +3,8 @@ import time, requests, os
 
 from fake_useragent import FakeUserAgent
 
+Response = requests.Response
+
 def download(
     url: str,
     path: str,
@@ -61,7 +63,7 @@ def request(
     sleep_time: float = 2.5,
     debug: bool = False,
     fake_useragent: bool = False
-) -> Optional[requests.Response]:
+) -> Optional[Response]:
     current_try_count = 0
 
     while current_try_count < max_request_try_count:
@@ -89,7 +91,7 @@ def __request(
     headers: Dict = None,
     debug: bool = False,
     fake_useragent: bool = False
-) -> Optional[requests.Response]:
+) -> Optional[Response]:
     if headers is None:
         headers = {}
     
